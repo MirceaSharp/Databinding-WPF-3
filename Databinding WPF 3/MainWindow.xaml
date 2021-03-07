@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="ToDo:" HorizontalAlignment="Left" Height="38" Margin="27,24,0,0" VerticalAlignment="Top" Width="130"/>
+        <ComboBox Name="cmbToDo" HorizontalAlignment="Left" Height="27" Margin="178,24,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label Content="When" HorizontalAlignment="Left" Height="28" Margin="27,71,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label Content="What" HorizontalAlignment="Left" Height="28" Margin="27,116,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label Content="Who" HorizontalAlignment="Left" Height="28" Margin="27,160,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.543,1.748"/>
+        <TextBox Name="txtWhen" HorizontalAlignment="Left" Height="28" Margin="178,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox Name="txtWhat" HorizontalAlignment="Left" Height="31" Margin="178,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox Name="txtWho" HorizontalAlignment="Left" Height="32" Margin="178,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+
     </Grid>
 </Window>
