@@ -23,6 +23,11 @@ namespace Databinding_WPF_3
         public MainWindow()
         {
             InitializeComponent();
+
+            List<ToDo> myTodoList = new List<ToDo>();
+            myTodoList.Add(new ToDo("09-08-2020",  "wash the dishes", "Mircea:"));
+            cmbToDo.ItemsSource = myTodoList;
+
         }
     }
 }

@@ -23,10 +23,53 @@ namespace Databinding_WPF_3
 
         
 
-        public string When { get; set; }
-        public string What { get; set; }
+        public string When
+        {
+            get
+            {
+                return _when;
+            }
+            set
+            {
+                _when = value;
+                if(PropertyChanged != null)
+                {
+                    PropertyChanged(this, new PropertyChangedEventArgs("When"));
+                }
+            }
+        }
+        public string What
+        {
+            get
+            {
+                return _what;
+            }
+            set
+            {
+                _what = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged(this, new PropertyChangedEventArgs("What"));
+                }
+            }
+        }
 
-        public string Who { get; set; }
+        public string Who
+        {
+            get
+            {
+                return _who;
+            }
+            set
+            {
+                _who = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged(this, new PropertyChangedEventArgs("Who"));
+                }
+            }
+        }
+           
 
         public string Error { get; }
 
@@ -38,16 +81,16 @@ namespace Databinding_WPF_3
         }
         public override string ToString()
         {
-            return base.ToString();
+            return When + "   " + Who + "   " + What;
         }
 
         public string this[string columnName]
         {
             get
             {
-                switch(columnName)
+                switch (columnName)
                 {
-                    default:return null;
+                    default: return null;
                 }
             }
         }
