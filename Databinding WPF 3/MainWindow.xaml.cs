@@ -28,6 +28,8 @@ namespace Databinding_WPF_3
             myTodoList.Add(new ToDo("09-08-2020",  "wash the dishes", "Mircea:"));
             cmbToDo.ItemsSource = myTodoList;
 
+            myTodoList.Add(new ToDo("09-09-2022", "walk the dog", "Andreea"));
+
         }
     }
 }
